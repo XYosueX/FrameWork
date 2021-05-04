@@ -1,0 +1,6 @@
+<------- PAGINAS PARA UTILIZAR EN FRANEWORK ---------->
+
+--  normalize.css --- codigo css
+--  minifier  ---! coloca el codigo en una sola linea
+-- google fonts ---  fuentes
+--https://getbootstrap.com/docs/5.0/examples/cheatsheet/

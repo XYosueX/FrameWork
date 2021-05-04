@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/skin.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <div class="contentData">
+            <div class="wrapper">
+                <div class="main-login">
+                    <div class="sura-header-bar">
+                        <ul>
+                            <li class="item-logo">
+                                <img src="https://login.sura.com/media/svg/logo-sura.svg" alt="sura">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sign-in">
+                        <div class="signin-box">
+                            <div class="sign-in-title">
+                                <h1>Iniciar sesión</h1>
+                                <h2 style="padding-left: 15px;">
+                                    <span>EPS SURA</span></h2>
+                            </div>
+                            <div>
+                                <div id="tabInternet" aria-labelledby="ctl00_ContentMain_idTabInternet" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+                                    <!-- ui-dialog error login -->
+                                    <div class="fieldRow group">
+                                        <div class="select">
+                                            <select placeholder="TIPO DE DOCUMENTO"><option value=""></option><option value="C">CEDULA</option><option value="E">CEDULA EXTRANJERIA</option><option value="D">TARJETA DE IDENTIDAD</option></select>
+                                        </div>
+                                    </div>
+                                    <!-- ui-dialog error login -->
+                                    <div class="fieldRow group">
+                                        <input name="suraName" type="text" maxlength="19" id="suraName" tabindex="1" autocomplete="off" required="" class="idleField">
+                                        <label>Número de identificación</label>
+                                    </div>
+                                    <!-- ui-dialog error login -->
+                                    <div class="fieldRow group">
+                                        <input name="suraPassword" type="password" maxlength="4" id="suraPassword" tabindex="2" autocomplete="off" required="" class="ui-keyboard-input ui-widget-content idleField ui-keyboard-autoaccepted" aria-haspopup="true" role="textbox">
+                                        <label id="lblpass" class="lbl-top10_pass"> Contraseña</label>
+                                    </div>
+
+                                    <div class="message-error">
+                                        <span class="errormsg hidden" id="errormsgtab2"></span>
+                                    </div>
+                                    <!---------------------------------------------------->
+                                    <div class="fieldButton btn-r-align row">
+                                        <div class="right">
+                                            <input type="button" value="Iniciar sesión" class="buttonblue ui-button ui-widget ui-corner-all ui-buttonsubmit-default" style="width: 100%;" role="button" aria-disabled="false">
+                                        </div>
+                                        <div class="left">
+                                            <a href="" style="display:block; padding: 10px;" class="linko links">
+                                                <span id="ctl00_ContentMain_Label1">¿Has olvidado tu contraseña?</span></a>
+                                        </div>
+
+                                    </div>
+                                    <!---------------------------------------------------->
+                                    <div id="loadingSura" class="submitSpinner hidden">
+                                        <div class="submitSpinnerLoading"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sign-in-description">
+                        <div class="t-pico">¿Aún no tienes una cuenta?</div>
+                        <div class="switch"><a href="https://solicitudes.sura.com/SS/Register/Eps/UsersRegistration.aspx" id="switch-link">Crear una cuenta</a></div>
+                    </div>
+                    <div class="sign-in-allmessage" style="text-align: center; color: #555; font-size: 14px;">
+                        <p class="tagline">Una sola cuenta de SURA para todos los servicios de SURA</p>
+                    </div>
+                    <!-- ui-dialog error login -->
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="sura-footer-bar">
+            <div class="footer content clearfix">
+                <ul>
+                    <li>© 2021 Suramericana S.A</li>
+                    <li><a href="https://www.epssura.com/pasos-servicios-un-clic" target="_blank">Ayuda</a></li>
+                    <li class="terms"><a href="https://epssura.com/terminos-de-ley-y-datos" target="_blank">Privacidad</a></li>
+                    <li class="terms"><a href="https://www.epssura.com/files/2019/politica-general-seguridad-informacion-ciberseguridad.pdf" target="_blank">Seguridad</a></li>
+                </ul>
+
+            </div>
+            <div class="footer content clearfix">
+                <ul>
+                    <li>
+
+                        <div style="display: none;">
+                            <input type="text" id="country_selector_code" name="country_selector_code" data-countrycodeinput="1" readonly="readonly" placeholder="Selected country code will appear here">
+                            <label for="country_selector_code">...and the selected country code will be updated here</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sura-footer-logo">
+        </div>
+
+    </form>
+</body>
+
+</html>
